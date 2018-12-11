@@ -1,0 +1,155 @@
+html {
+    font-size: 10px;
+}
+
+.App {
+    background: black;
+}
+
+.next-launch-container {
+    background: url("./Images/rocket-launch.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.next-launch-info {
+    background: black;
+    border-radius: 2rem;
+    opacity: 0.7;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2rem;
+}
+
+.seperator {
+    height:200px;
+    background: black;
+}
+
+.latest-launch-container {
+    background: url("./Images/earth.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.latest-launch-info {
+    background: black;
+    border-radius: 2rem;
+    opacity: 0.7;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2rem;
+}
+
+.total-launches-container {
+    background: url("./Images/exploration.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.total-launches {
+    background: black;
+    border-radius: 20px;
+    opacity: 0.7;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2rem;
+}
+
+.mission-name {
+    font-size: 7rem;
+}
+
+.sub-heading {
+    font-size: 3rem;
+}
+
+.home p {
+    font-size: 2rem;
+}
+
+.countdown-timer, .launch-count, .launch-count-subtitle {
+    text-align: center;
+}
+
+.time-stat-value, .launch-count {
+    font-size: 12rem;
+    font-weight: 100;
+}
+
+.time-stat-subtitle, .launch-count-subtitle {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.launch-details, .legend {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1rem;
+}
+
+.launch-history, .upcoming-launches {
+    background: url("./Images/stars.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.success-color {
+    height: 2rem;
+    width: 4rem;
+    background-color: lawngreen !important;
+    display: inline-block;
+}
+
+.fail-color {
+    height: 2rem;
+    width: 4rem;
+    background-color: red !important;
+    display: inline-block;
+}
+
+.legend {
+    background: black;
+    opacity: 0.7;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    color: #ddd;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 925px) {
+    html {
+      font-size: 8px;
+    }
+  }
+
+@media only screen and (max-width: 750px) {
+    html {
+      font-size: 6px;
+    }
+  }
+
+@media only screen and (max-width: 565px) {
+    html {
+      font-size: 4px;
+    }
+  }
+
+@media only screen and (max-width: 380px) {
+    html {
+      font-size: 2px;
+    }
+  }
