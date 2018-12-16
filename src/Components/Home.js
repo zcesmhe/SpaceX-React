@@ -43,7 +43,11 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="seperator"></div>
+                <div className="seperator">
+                    <span className="helper"></span>
+                    <div className="fire"></div>
+                    <img src="https://rocketfly.netlify.com/img/rocket.svg" alt="Rocket" />
+                </div>
                 <div className="latest-launch-container">
                     <div className="latest-launch-info">
                         <div>
@@ -71,7 +75,7 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         );
     }
 }

@@ -25,11 +25,6 @@ html {
     padding: 2rem;
 }
 
-.seperator {
-    height:200px;
-    background: black;
-}
-
 .latest-launch-container {
     background: url("./Images/earth.jpg") no-repeat center;
     background-attachment: fixed;
@@ -101,8 +96,8 @@ html {
 }
 
 .launch-history, .upcoming-launches {
-    background: url("./Images/stars.jpg") no-repeat center;
-    background-size: cover;
+    background: url("./Images/stars.jpg") repeat center;
+    background-size: auto auto;
     height: 100%;
     padding-top: 10px;
 }
@@ -128,6 +123,62 @@ html {
     border-radius: 1rem;
     color: #ddd;
     padding: 1rem;
+}
+
+.seperator {
+    height:20rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: url("./Images/stars.jpg") repeat center;
+    background-attachment: fixed;
+    animation: backgroundScroll 10s ease-in infinite;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.fire {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    animation: rocket-move 10s ease-in infinite, fire 10s ease-in infinite;
+}
+
+.seperator img {
+    height: 15rem;
+    width: 7.5rem;
+    transform: rotate(90deg);
+    vertical-align: middle;
+    position: relative;
+    left: -7.5rem;
+    animation: rocket-move 10s ease-in infinite;
+}
+
+@keyframes rocket-move {
+    0% {left: -7.5rem}
+    100% {left: 100%}
+}
+
+@keyframes fire {
+    10% {
+        width: 1rem;
+        height: 1rem;
+        background-image: linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0.1));
+    }
+    100% {
+        width: 12rem;
+        height: 1rem;
+        background-image: linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0.1));
+    }
+
+}
+
+@keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -100vw 0;}
 }
 
 @media only screen and (max-width: 925px) {
